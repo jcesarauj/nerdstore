@@ -1,4 +1,5 @@
-﻿using NerdStore.Core.Contracts;
+﻿using NerdStore.Catalog.Domain.Constants;
+using NerdStore.Core.Contracts;
 using NerdStore.Core.DomainObjects;
 using System;
 
@@ -40,9 +41,9 @@ namespace NerdStore.Catalog.Domain.Models
 
 		public void Validate()
 		{
-			AssertionConcern.ValidateIfIsEmpty(Name, "O campo Nome do produto não pode ser vazio");
-			AssertionConcern.ValidateIfIsEmpty(Description, "O campo Descrição do produto não pode ser vazio");
-			AssertionConcern.ValidateIfIsEmpty(Image, "O campo Imagem do produto não pode ser vazio");			
+			AssertionConcern.ValidateIfIsEmpty(Name, ProductConstants.MESSAGE_PRODUCT_NAME_NULL);
+			AssertionConcern.ValidateIfIsEmpty(Description, ProductConstants.MESSAGE_PRODUCT_DESCRIPTION_NULL);
+			AssertionConcern.ValidateIfIsEmpty(Image, ProductConstants.MESSAGE_PRODUCT_IMAGE_NULL);			
 		}
 	}
 }

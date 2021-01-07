@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y2STfhGnEz90gser6ja44K5hwHs9VKsQv4zmH+9AsUCSt7YaEUKb/KxfoMQ2ZUZN1bK/iREoQ8sXRtCgETpPKQ==",
+  "dgSpecHash": "LRqbeYkEE0dwdZkCXY/3sw8O9DfYs5JaBqVJLgAXRoh59hg1tmfHb9mXHPN4qI43eLYMgvfO1aPK67PDiYAIlA==",
   "success": true,
-  "projectFilePath": "C:\\nerdstore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+  "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

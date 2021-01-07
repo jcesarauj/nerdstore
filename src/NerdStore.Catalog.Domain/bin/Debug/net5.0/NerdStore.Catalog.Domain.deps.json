@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "NerdStore.Catalog.Domain/1.0.0": {
+        "dependencies": {
+          "NerdStore.Core": "1.0.0"
+        },
+        "runtime": {
+          "NerdStore.Catalog.Domain.dll": {}
+        }
+      },
+      "NerdStore.Core/1.0.0": {
+        "runtime": {
+          "NerdStore.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NerdStore.Catalog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NerdStore.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
