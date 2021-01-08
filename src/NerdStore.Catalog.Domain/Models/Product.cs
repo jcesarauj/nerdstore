@@ -7,7 +7,7 @@ namespace NerdStore.Catalog.Domain.Models
 {
 	public class Product : Entity, IAggregateRoot
 	{
-		public Product(string name, string description, bool active, Guid categoryId, decimal price, DateTime createDate, string image)
+		public Product(string name, string description, bool active, Guid categoryId, decimal price, DateTime createDate, string image, Dimensions dimensions)
 		{
 			Name = name;
 			Description = description;
@@ -16,6 +16,7 @@ namespace NerdStore.Catalog.Domain.Models
 			CreateDate = createDate;
 			Image = image;
 			CategoryId = categoryId;
+			Dimensions = dimensions;
 
 			Validate();
 		}
@@ -29,6 +30,7 @@ namespace NerdStore.Catalog.Domain.Models
 		public int QuantityInStock { get; private set; }
 		public Guid CategoryId { get; private set; }
 		public Category Category { get; private set; }
+		public Dimensions Dimensions { get; private set; }
 
 		public void Activate() => Active = true;
 		public void Inactivate() => Active = false;
@@ -43,7 +45,7 @@ namespace NerdStore.Catalog.Domain.Models
 		{
 			AssertionConcern.ValidateIfIsEmpty(Name, ProductConstants.MESSAGE_PRODUCT_NAME_NULL);
 			AssertionConcern.ValidateIfIsEmpty(Description, ProductConstants.MESSAGE_PRODUCT_DESCRIPTION_NULL);
-			AssertionConcern.ValidateIfIsEmpty(Image, ProductConstants.MESSAGE_PRODUCT_IMAGE_NULL);			
+			AssertionConcern.ValidateIfIsEmpty(Image, ProductConstants.MESSAGE_PRODUCT_IMAGE_NULL);
 		}
 	}
 }

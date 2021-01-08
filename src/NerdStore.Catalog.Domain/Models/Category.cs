@@ -1,9 +1,12 @@
 ﻿using NerdStore.Core.DomainObjects;
+using System.Collections.Generic;
 
 namespace NerdStore.Catalog.Domain.Models
 {
 	public class Category : Entity
 	{
+		protected Category() { }
+
 		public Category(string name, int code)
 		{
 			Name = name;
@@ -12,6 +15,8 @@ namespace NerdStore.Catalog.Domain.Models
 
 		public string Name { get; private set; }
 		public int Code { get; private set; }
+
+		public ICollection<Product> Products { get; set; } //EF Relation
 
 		public void Validate()
 		{
