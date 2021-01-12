@@ -2,6 +2,7 @@
 using NerdStore.Catalog.Domain.Contracts.Repository;
 using NerdStore.Catalog.Domain.Models;
 using NerdStore.Core.Contracts.Data;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -13,7 +14,7 @@ namespace NerdStore.Catalog.Data.Repository
 
 		public ProductRepository(CatalogContext catalogContext)
 		{
-			_catalogContext = catalogContext;
+			_catalogContext = catalogContext;			
 		}
 
 		public IUnitOfWork UnitOfWork => _catalogContext;
@@ -23,14 +24,14 @@ namespace NerdStore.Catalog.Data.Repository
 			_catalogContext.Products.Add(product);
 		}
 
-		public void Delete(int productId)
+		public void Delete(Guid productId)
 		{
 			throw new System.NotImplementedException();
 		}
 
-		public Task<Product> GetById(int productId)
+		public async Task<Product> GetById(Guid productId)
 		{
-			throw new System.NotImplementedException();
+			return await _catalogContext.Products.AsNoTracking().FirstAsync(p => p.Id == productId);
 		}
 
 		public async Task<IEnumerable<Product>> List()

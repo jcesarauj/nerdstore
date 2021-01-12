@@ -35,6 +35,23 @@ namespace NerdStore.Catalog.Domain.Models
 		public void Activate() => Active = true;
 		public void Inactivate() => Active = false;
 
+		public bool HasStock(int quantity)
+		{
+			int avaliable = QuantityInStock - quantity;
+			if (avaliable <= 0) { return false; }
+			return true;
+		}
+
+		public void DebitStock(int quantity)
+		{
+			QuantityInStock -= quantity;
+		}
+
+		public void CreditStock(int quantity)
+		{
+			QuantityInStock += quantity;
+		}
+
 		public void UpdateCategory(Category category)
 		{
 			Category = category;

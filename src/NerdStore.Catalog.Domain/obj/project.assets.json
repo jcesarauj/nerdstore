@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "MediatR/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/5.0.1": {
         "type": "package",
         "dependencies": {
@@ -165,7 +174,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.1"
+          "Microsoft.EntityFrameworkCore": "5.0.1",
+          "mediatr": "9.0.0"
         },
         "compile": {
           "bin/placeholder/NerdStore.Core.dll": {}
@@ -177,6 +187,24 @@
     }
   },
   "libraries": {
+    "MediatR/9.0.0": {
+      "sha512": "8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
+      "type": "package",
+      "path": "mediatr/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.9.0.0.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/5.0.1": {
       "sha512": "bz4WSbLqNw9gGeHw8VAzCcX6TVDLAD/SZRii9G7XSsqAdLL2J8pVINemXfRUt5IHlC1yWC5To4PzAUWJJZCbYw==",
       "type": "package",
@@ -541,7 +569,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "NerdStore.Core >= 1.0.0"
+      "NerdStore.Core >= 1.0.0",
+      "mediatr >= 9.0.0"
     ]
   },
   "packageFolders": {
@@ -590,6 +619,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "mediatr": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
