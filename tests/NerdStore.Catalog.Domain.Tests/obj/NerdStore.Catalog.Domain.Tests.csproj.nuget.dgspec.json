@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\nerdstore\\NerdStore\\nerdstore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj": {}
+    "C:\\nerdstore\\NerdStore\\NerdStore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj": {}
   },
   "projects": {
     "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
@@ -110,6 +110,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MediaTr.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -138,14 +142,14 @@
         }
       }
     },
-    "C:\\nerdstore\\NerdStore\\nerdstore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj",
         "projectName": "NerdStore.Catalog.Domain.Tests",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\tests\\NerdStore.Catalog.Domain.Tests\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\tests\\NerdStore.Catalog.Domain.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -165,11 +169,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               }
             }
           }

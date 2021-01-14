@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dNqvX4kFI+n5dul8s8vlmwMXR0aNH3tYspRBsVd2/UcFD0rwY7OI/vsnjTaV2GnNpFQejE+OKVIDEFNZKyhwCw==",
+  "dgSpecHash": "Ab+mpWc82di4MQfkjde8dB1t2PEpAicaLqrxdYxOsfEuhRM9mK6o4U6dHsW7PCMgalv2+n7nqV0PwZT+63HDeQ==",
   "success": true,
   "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Julio\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.1\\microsoft.entityframeworkcore.abstractions.5.0.1.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.1\\microsoft.entityframeworkcore.analyzers.5.0.1.nupkg.sha512",

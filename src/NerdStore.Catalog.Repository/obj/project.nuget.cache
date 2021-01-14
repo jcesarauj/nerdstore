@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "F20Aip3jsMdsCw3wDpqQeh0i/36uFlqzaJAC+kou0JiNsBSwQ4kdpuupvp/+Fy4iCsweKYB+HqCReuxBwc3a2Q==",
+  "dgSpecHash": "DCfUwX3U83pGLjOZC++7JfR+EHClVyxreNrQV2XpsXDEtKdHm8n++PdUd5AZumwoleH0fDzMbZCzBTj0CPkaBg==",
   "success": true,
-  "projectFilePath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
+  "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\Julio\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",

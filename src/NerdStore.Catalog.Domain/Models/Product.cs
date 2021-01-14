@@ -21,6 +21,8 @@ namespace NerdStore.Catalog.Domain.Models
 			Validate();
 		}
 
+		protected Product() { }
+
 		public string Name { get; private set; }
 		public string Description { get; private set; }
 		public bool Active { get; private set; }

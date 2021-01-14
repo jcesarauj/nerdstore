@@ -17,6 +17,19 @@
           "lib/netstandard2.1/MediatR.dll": {}
         }
       },
+      "MediatR.Extensions.Microsoft.DependencyInjection/9.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MediatR": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.7.1": {
         "type": "package",
         "compile": {
@@ -1819,6 +1832,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "MediaTr.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.1",
           "mediatr": "9.0.0"
         },
@@ -1880,6 +1894,19 @@
         "lib/netstandard2.1/MediatR.xml",
         "mediatr.9.0.0.nupkg.sha512",
         "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/9.0.0": {
+      "sha512": "msreY4ogiPdIRWiCQVHQDytIQpsZCLWsixWPZ+Xs86KZrvtuiV8BDHbIT0kBmogynVYWNpspb3caw+86YU8L6w==",
+      "type": "package",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll",
+        "mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+        "mediatr.extensions.microsoft.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.CodeCoverage/16.7.1": {
@@ -6112,11 +6139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj",
+      "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj",
       "projectName": "NerdStore.Catalog.Domain.Tests",
-      "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj",
+      "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\tests\\NerdStore.Catalog.Domain.Tests\\NerdStore.Catalog.Domain.Tests.csproj",
       "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-      "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\tests\\NerdStore.Catalog.Domain.Tests\\obj\\",
+      "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\tests\\NerdStore.Catalog.Domain.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6136,11 +6163,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
             }
           }
         }

@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Catalog.Domain.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Catalog.Data", "src\NerdStore.Catalog.Repository\NerdStore.Catalog.Data.csproj", "{7D42BF33-FBED-43BB-8806-32FCAB4E568D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Catalog.Aplication", "src\NerdStore.Catalog.Aplication\NerdStore.Catalog.Aplication.csproj", "{E2CE431C-8EF1-4B76-B226-5957B154C7E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.WebApp.UI", "src\NerdStore.WebApp.UI\NerdStore.WebApp.UI.csproj", "{1062D1FE-8A2A-4213-8D8A-B47013FF0701}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,14 @@ Global
 		{7D42BF33-FBED-43BB-8806-32FCAB4E568D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D42BF33-FBED-43BB-8806-32FCAB4E568D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D42BF33-FBED-43BB-8806-32FCAB4E568D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2CE431C-8EF1-4B76-B226-5957B154C7E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2CE431C-8EF1-4B76-B226-5957B154C7E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2CE431C-8EF1-4B76-B226-5957B154C7E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2CE431C-8EF1-4B76-B226-5957B154C7E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1062D1FE-8A2A-4213-8D8A-B47013FF0701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1062D1FE-8A2A-4213-8D8A-B47013FF0701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1062D1FE-8A2A-4213-8D8A-B47013FF0701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1062D1FE-8A2A-4213-8D8A-B47013FF0701}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +76,8 @@ Global
 		{90A6A5CE-9369-4E1C-88BE-FD1CB619108B} = {64BBA2AA-4BA6-44C1-8815-32375430C914}
 		{ACD4F592-2C13-4FB0-85D2-80021F8927DA} = {64BBA2AA-4BA6-44C1-8815-32375430C914}
 		{7D42BF33-FBED-43BB-8806-32FCAB4E568D} = {64BBA2AA-4BA6-44C1-8815-32375430C914}
+		{E2CE431C-8EF1-4B76-B226-5957B154C7E1} = {64BBA2AA-4BA6-44C1-8815-32375430C914}
+		{1062D1FE-8A2A-4213-8D8A-B47013FF0701} = {B01DEEF0-A0BE-463A-8C85-67B82D2B5D99}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02EACF63-F518-4856-A682-8C63261A5FB4}
