@@ -5779,9 +5779,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj",
-      "projectName": "NerdStore.Catalog.Aplication",
-      "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj",
+      "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
+      "projectName": "NerdStore.Catalog.Application",
+      "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
       "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
       "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\obj\\",
       "projectStyle": "PackageReference",

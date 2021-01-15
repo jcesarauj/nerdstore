@@ -1,10 +1,10 @@
-﻿using NerdStore.Catalog.Aplication.ViewModel;
+﻿using NerdStore.Catalog.Application.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NerdStore.Catalog.Aplication.Contract
+namespace NerdStore.Catalog.Application.Contract
 {
 	public interface IProductAppService
 	{

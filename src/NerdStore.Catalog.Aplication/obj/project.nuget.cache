@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tcjsnsz+COFOZCx4YXnQL6RAfRwCISDNm0WMh6hkEDiR6GKgTqfqQDh5mVT4qD5y1Qki3IbYAaJJPSHKdFsyBQ==",
+  "dgSpecHash": "r+DMPlSgXV113GSLt2E1ZM4IqrEXfJAb23LewtZILV0tAKA5zCcaFYF2X645Cyp1c0pDTL8JlPZD04RaLF/iKQ==",
   "success": true,
-  "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj",
+  "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

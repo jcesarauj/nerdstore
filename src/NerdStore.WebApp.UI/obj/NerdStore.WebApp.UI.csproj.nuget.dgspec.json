@@ -4,12 +4,12 @@
     "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.WebApp.UI\\NerdStore.WebApp.UI.csproj": {}
   },
   "projects": {
-    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj",
-        "projectName": "NerdStore.Catalog.Aplication",
-        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
+        "projectName": "NerdStore.Catalog.Application",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
         "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\obj\\",
         "projectStyle": "PackageReference",
@@ -314,8 +314,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj"
               },
               "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
                 "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"

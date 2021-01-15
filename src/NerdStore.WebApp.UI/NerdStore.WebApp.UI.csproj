@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\NerdStore.Catalog.Aplication\NerdStore.Catalog.Aplication.csproj" />
+    <ProjectReference Include="..\NerdStore.Catalog.Aplication\NerdStore.Catalog.Application.csproj" />
     <ProjectReference Include="..\NerdStore.Catalog.Domain\NerdStore.Catalog.Domain.csproj" />
     <ProjectReference Include="..\NerdStore.Catalog.Repository\NerdStore.Catalog.Data.csproj" />
     <ProjectReference Include="..\NerdStore.Core\NerdStore.Core.csproj" />

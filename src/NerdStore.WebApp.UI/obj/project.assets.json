@@ -1675,7 +1675,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "NerdStore.Catalog.Aplication/1.0.0": {
+      "NerdStore.Catalog.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1683,10 +1683,10 @@
           "NerdStore.Catalog.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/NerdStore.Catalog.Aplication.dll": {}
+          "bin/placeholder/NerdStore.Catalog.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/NerdStore.Catalog.Aplication.dll": {}
+          "bin/placeholder/NerdStore.Catalog.Application.dll": {}
         }
       },
       "NerdStore.Catalog.Data/1.0.0": {
@@ -6200,10 +6200,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "NerdStore.Catalog.Aplication/1.0.0": {
+    "NerdStore.Catalog.Application/1.0.0": {
       "type": "project",
-      "path": "../NerdStore.Catalog.Aplication/NerdStore.Catalog.Aplication.csproj",
-      "msbuildProject": "../NerdStore.Catalog.Aplication/NerdStore.Catalog.Aplication.csproj"
+      "path": "../NerdStore.Catalog.Aplication/NerdStore.Catalog.Application.csproj",
+      "msbuildProject": "../NerdStore.Catalog.Aplication/NerdStore.Catalog.Application.csproj"
     },
     "NerdStore.Catalog.Data/1.0.0": {
       "type": "project",
@@ -6229,7 +6229,7 @@
       "Microsoft.AspNetCore.Identity.UI >= 5.0.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.1",
-      "NerdStore.Catalog.Aplication >= 1.0.0",
+      "NerdStore.Catalog.Application >= 1.0.0",
       "NerdStore.Catalog.Data >= 1.0.0",
       "NerdStore.Catalog.Domain >= 1.0.0",
       "NerdStore.Core >= 1.0.0"
@@ -6266,8 +6266,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Aplication.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj"
             },
             "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
               "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"

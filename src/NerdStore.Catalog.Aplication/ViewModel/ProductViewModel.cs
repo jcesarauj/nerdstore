@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NerdStore.Catalog.Aplication.ViewModel
+namespace NerdStore.Catalog.Application.ViewModel
 {
 	public class ProductViewModel
 	{

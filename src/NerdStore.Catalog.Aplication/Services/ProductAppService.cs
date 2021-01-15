@@ -1,5 +1,5 @@
-﻿using NerdStore.Catalog.Aplication.Contract;
-using NerdStore.Catalog.Aplication.ViewModel;
+﻿using NerdStore.Catalog.Application.Contract;
+using NerdStore.Catalog.Application.ViewModel;
 using NerdStore.Catalog.Domain.Contracts.Repository;
 using NerdStore.Catalog.Domain.Models;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NerdStore.Catalog.Aplication.Services
+namespace NerdStore.Catalog.Application.Services
 {
 	public class ProductAppService : IProductAppService
 	{
