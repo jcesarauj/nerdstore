@@ -10,5 +10,9 @@ namespace NerdStore.Core.DomainObjects
 		{
 			Id = Guid.NewGuid();
 		}
+
+		protected DateTime CreateDate { get; set; }
+		protected DateTime UpdateDate { get; set; }
+		protected bool Active { get; set; }
 	}
 }
