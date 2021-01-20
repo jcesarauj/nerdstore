@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ab+mpWc82di4MQfkjde8dB1t2PEpAicaLqrxdYxOsfEuhRM9mK6o4U6dHsW7PCMgalv2+n7nqV0PwZT+63HDeQ==",
+  "dgSpecHash": "eDyUEWG25QEpmC5hLnoYGKrow5h5FYQqY7N1vCI0I9xnsY+txpA9xNn8DWi6sHX3P8zcXYz9dBePy78aayKLFg==",
   "success": true,
   "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Julio\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.1\\microsoft.entityframeworkcore.5.0.1.nupkg.sha512",

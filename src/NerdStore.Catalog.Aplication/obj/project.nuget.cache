@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "r+DMPlSgXV113GSLt2E1ZM4IqrEXfJAb23LewtZILV0tAKA5zCcaFYF2X645Cyp1c0pDTL8JlPZD04RaLF/iKQ==",
+  "dgSpecHash": "1ZQooDNglZoG9yBk4uNHlgZTHJnstqDv2aiBZVy308mGVd4yZo27l5W5yjKZnI5dQ3+DkA6khx1msDHrt7Llhg==",
   "success": true,
   "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Julio\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

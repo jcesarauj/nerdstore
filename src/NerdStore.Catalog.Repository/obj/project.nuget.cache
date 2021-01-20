@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DCfUwX3U83pGLjOZC++7JfR+EHClVyxreNrQV2XpsXDEtKdHm8n++PdUd5AZumwoleH0fDzMbZCzBTj0CPkaBg==",
+  "dgSpecHash": "sLriIagSzI7GGcEH656TD4OUP6FYd2gkfTam4jym/VrZdrYy9+3Q4FljPp3HRm3yrYgGWKhYz/B0q9kSDJiinQ==",
   "success": true,
   "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Julio\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
