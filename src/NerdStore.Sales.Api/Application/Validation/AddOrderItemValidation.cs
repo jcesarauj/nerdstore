@@ -1,11 +1,8 @@
 ﻿using FluentValidation;
-using NerdStore.Sales.Api.Commands;
+using NerdStore.Sales.Api.Application.Commands;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace NerdStore.Sales.Api.Validation
+namespace NerdStore.Sales.Api.Application.Validation
 {
 	public class AddOrderItemValidation : AbstractValidator<AddOrderItemCommand>
 	{

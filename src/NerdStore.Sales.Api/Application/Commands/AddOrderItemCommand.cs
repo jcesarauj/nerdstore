@@ -1,8 +1,8 @@
 ﻿using NerdStore.Core.Messages;
-using NerdStore.Sales.Api.Validation;
+using NerdStore.Sales.Api.Application.Validation;
 using System;
 
-namespace NerdStore.Sales.Api.Commands
+namespace NerdStore.Sales.Api.Application.Commands
 {
 	public class AddOrderItemCommand : Command
 	{

@@ -3,6 +3,7 @@ using NerdStore.Core.DomainObjects;
 using NerdStore.Sales.Domain.Enums;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace NerdStore.Sales.Domain.Models
@@ -28,6 +29,11 @@ namespace NerdStore.Sales.Domain.Models
 			OrderStatus = orderStatus;
 		}
 
+		public Order(Guid clientId)
+		{
+			ClientId = clientId;
+		}
+
 		public int Code { get; private set; }
 		public Guid ClientId { get; private set; }
 		public Guid VoucherId { get; private set; }
@@ -37,6 +43,21 @@ namespace NerdStore.Sales.Domain.Models
 		public OrderStatusEnum OrderStatus { get; private set; }
 		public virtual Voucher Voucher { get; private set; }
 		public IReadOnlyCollection<OrderItem> OrderItems => _orderItems;
+
+		public void AddItem(OrderItem orderItem)
+		{
+			_orderItems.Add(orderItem);
+		}
+
+		public bool VerifyIfItemExist(OrderItem orderItem)
+		{
+			return _orderItems.Contains(orderItem);
+		}
+
+		public void UpdateOrderITem(OrderItem orderItem)
+		{
+			
+		}
 
 		public void UpdateStatus(OrderStatusEnum orderStatus)
 		{

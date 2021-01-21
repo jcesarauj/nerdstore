@@ -10,8 +10,8 @@ namespace NerdStore.Catalog.Domain.Service
 	public class StockService : IStockService
 	{
 		private readonly IProductRepository _productRepository;
-		private readonly IMediaTrHandler _mediaTrHandler;
-		public StockService(IProductRepository productRepository, IMediaTrHandler mediaTrHandler)
+		private readonly IMediatorHandler _mediaTrHandler;
+		public StockService(IProductRepository productRepository, IMediatorHandler mediaTrHandler)
 		{
 			_productRepository = productRepository;
 			_mediaTrHandler = mediaTrHandler;

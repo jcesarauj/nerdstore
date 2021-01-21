@@ -4,6 +4,7 @@ namespace NerdStore.Catalog.Application.ViewModel
 {
 	public class ProductViewModel
 	{
+		public Guid ProductId { get; private set; }
 		public string Name { get; private set; }
 		public string Description { get; private set; }
 		public bool Active { get; private set; }

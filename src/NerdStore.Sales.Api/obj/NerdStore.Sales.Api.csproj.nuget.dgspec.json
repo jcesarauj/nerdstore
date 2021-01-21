@@ -4,6 +4,70 @@
     "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj": {}
   },
   "projects": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
+        "projectName": "NerdStore.Catalog.Application",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
+        "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+              },
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -47,6 +111,87 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "mediatr": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
+        "projectName": "NerdStore.Catalog.Data",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
+        "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
             "mediatr": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -118,6 +263,14 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -173,11 +326,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj"
+              },
               "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
                 "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
               },
               "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
                 "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              },
+              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
               }
             }
           }
@@ -205,6 +364,67 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
+        "projectName": "NerdStore.Sales.Domain",
+        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
+        "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

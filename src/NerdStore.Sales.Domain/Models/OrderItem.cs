@@ -8,6 +8,15 @@ namespace NerdStore.Sales.Domain.Models
 	public class OrderItem : Entity
 	{
 		protected OrderItem() { }
+
+		public OrderItem(Guid productId, string productName, int quantity, decimal unitaryValue)
+		{
+			ProductId = productId;
+			ProductName = productName;
+			Quantity = quantity;
+			UnitaryValue = unitaryValue;
+		}
+
 		public Guid OrderItemId { get; private set; }
 		public Guid OrderId { get; private set; }
 		public Guid ProductId { get; private set; }

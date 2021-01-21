@@ -21,3 +21,4 @@ C:\nerdstore\NerdStore\NerdStore\src\NerdStore.Core\obj\Debug\net5.0\NerdStore.C
 C:\nerdstore\NerdStore\NerdStore\src\NerdStore.Core\obj\Debug\net5.0\NerdStore.Core.dll
 C:\nerdstore\NerdStore\NerdStore\src\NerdStore.Core\obj\Debug\net5.0\ref\NerdStore.Core.dll
 C:\nerdstore\NerdStore\NerdStore\src\NerdStore.Core\obj\Debug\net5.0\NerdStore.Core.pdb
+C:\nerdstore\NerdStore\NerdStore\src\NerdStore.Core\obj\Debug\net5.0\NerdStore.Core.csprojAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Api\obj\Debug\net5.0\NerdStore.Sales.Api.csprojAssemblyReference.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Api\obj\Debug\net5.0\NerdStore.Sales.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Api\obj\Debug\net5.0\NerdStore.Sales.Api.AssemblyInfoInputs.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Api\obj\Debug\net5.0\NerdStore.Sales.Api.AssemblyInfo.cs
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Api\obj\Debug\net5.0\NerdStore.Sales.Api.csproj.CoreCompileInputs.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Api\obj\Debug\net5.0\NerdStore.Sales.Api.MvcApplicationPartsAssemblyInfo.cache
