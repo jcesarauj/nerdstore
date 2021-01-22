@@ -30,9 +30,10 @@ namespace NerdStore.Catalog.Application.Services
 			throw new NotImplementedException();
 		}
 
-		public Task<ProductViewModel> GetById(Guid productId)
+		public async Task<ProductViewModel> GetById(Guid productId)
 		{
-			throw new NotImplementedException();
+			var product = await _productRepository.GetById(productId);
+			return new ProductViewModel(product);
 		}
 
 		public Task<IEnumerable<ProductViewModel>> List()

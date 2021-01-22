@@ -1,17 +1,37 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using NerdStore.Core.Comunication.Handler;
+using NerdStore.Core.Comunication.Mediator;
+using NerdStore.Core.Contracts.Mediator;
+using NerdStore.Core.Messages.CommonMessages.Notifications;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.Mvc;
 
 namespace NerdStore.Core.DomainObjects
 {
 	public class BaseController : Microsoft.AspNetCore.Mvc.Controller
 	{
+		private readonly DomainNotificationHandler _notifications;
+		private readonly IMediatorHandler _mediatorHandler;
+
 		protected Guid clientId = new Guid();
+
+		public BaseController(INotificationHandler<DomainNotification> notifications, IMediatorHandler mediatorHandler)
+		{
+			_notifications = (DomainNotificationHandler)notifications;
+			_mediatorHandler = mediatorHandler;
+		}
+
+		protected bool ValidOperation()
+		{
+			return (!_notifications.HasNotifications());
+		}
+
+		protected void NotifyError(string code, string message)
+		{
+			_mediatorHandler.PublishNotification(new DomainNotification(code, message));
+		}
 
 		protected new IActionResult Response<T>(T result)
 		{

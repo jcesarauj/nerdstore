@@ -3172,6 +3172,20 @@
           "bin/placeholder/NerdStore.Core.dll": {}
         }
       },
+      "NerdStore.Sales.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "NerdStore.Core": "1.0.0",
+          "NerdStore.Sales.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NerdStore.Sales.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NerdStore.Sales.Data.dll": {}
+        }
+      },
       "NerdStore.Sales.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -9545,6 +9559,11 @@
       "path": "../NerdStore.Core/NerdStore.Core.csproj",
       "msbuildProject": "../NerdStore.Core/NerdStore.Core.csproj"
     },
+    "NerdStore.Sales.Data/1.0.0": {
+      "type": "project",
+      "path": "../NerdStore.Sales.Data/NerdStore.Sales.Data.csproj",
+      "msbuildProject": "../NerdStore.Sales.Data/NerdStore.Sales.Data.csproj"
+    },
     "NerdStore.Sales.Domain/1.0.0": {
       "type": "project",
       "path": "../NerdStore.Sales.Domain/NerdStore.Sales.Domain.csproj",
@@ -9554,8 +9573,9 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "NerdStore.Catalog.Application >= 1.0.0",
-      "NerdStore.Catalog.Domain >= 1.0.0",
+      "NerdStore.Catalog.Data >= 1.0.0",
       "NerdStore.Core >= 1.0.0",
+      "NerdStore.Sales.Data >= 1.0.0",
       "NerdStore.Sales.Domain >= 1.0.0"
     ]
   },
@@ -9593,11 +9613,14 @@
             "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
               "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
             },
             "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
               "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+            },
+            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj"
             },
             "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
               "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"

@@ -1,9 +1,22 @@
-﻿using System;
+﻿using NerdStore.Catalog.Domain.Models;
+using System;
 
 namespace NerdStore.Catalog.Application.ViewModel
 {
 	public class ProductViewModel
 	{
+		public ProductViewModel(Product product)
+		{
+			ProductId = product.Id;
+			Name = product.Name;
+			Description = product.Description;
+			Active = product.Active;
+			Price = product.Price;
+			CreateDate = product.CreateDate;
+			Image = product.Image;
+			QuantityInStock = product.QuantityInStock;
+			CategoryId = product.CategoryId;
+		}
 		public Guid ProductId { get; private set; }
 		public string Name { get; private set; }
 		public string Description { get; private set; }

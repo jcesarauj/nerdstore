@@ -1,7 +1,7 @@
 ﻿using NerdStore.Catalog.Domain.Contracts.Repository;
 using NerdStore.Catalog.Domain.Contracts.Service;
 using NerdStore.Catalog.Domain.Events;
-using NerdStore.Core.Contracts.Mediatr;
+using NerdStore.Core.Contracts.Mediator;
 using System;
 using System.Threading.Tasks;
 

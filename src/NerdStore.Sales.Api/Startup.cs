@@ -1,18 +1,23 @@
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using NerdStore.Sales.Api.Commands;
-using NerdStore.Sales.Api.Handlers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using NerdStore.Catalog.Application.Contract;
+using NerdStore.Catalog.Application.Services;
+using NerdStore.Catalog.Data;
+using NerdStore.Catalog.Data.Repository;
+using NerdStore.Catalog.Domain.Contracts.Repository;
+using NerdStore.Core.Comunication.Handler;
+using NerdStore.Core.Comunication.Mediator;
+using NerdStore.Core.Contracts.Mediator;
+using NerdStore.Core.Messages.CommonMessages.Notifications;
+using NerdStore.Sales.Data.Repository;
+using NerdStore.Sales.Domain.Commands;
+using NerdStore.Sales.Domain.Contracts.Repository;
+using NerdStore.Sales.Domain.Handlers;
 
 namespace NerdStore.Sales.Api
 {
@@ -28,9 +33,27 @@ namespace NerdStore.Sales.Api
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			services.AddDbContext<CatalogContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
 			services.AddControllers();
 
+			services.AddMediatR(typeof(Startup));
+			// Mediator
+			services.AddScoped<IMediatorHandler, MediatorHandler>();
+
 			services.AddScoped<IRequestHandler<AddOrderItemCommand, bool>, OrderCommandHandler>();
+			services.AddScoped<INotificationHandler<DomainNotification>, DomainNotificationHandler>();
+
+			//Service
+			services.AddScoped<IProductAppService, ProductAppService>();
+
+			//Repository
+			services.AddScoped<IOrderRepository, OrderRepository>();
+			services.AddScoped<IProductRepository, ProductRepository>();
+
+			services.AddScoped<DbContextOptions<CatalogContext>>();
+			
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
