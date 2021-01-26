@@ -16,8 +16,11 @@ using NerdStore.Core.Contracts.Mediator;
 using NerdStore.Core.Messages.CommonMessages.Notifications;
 using NerdStore.Sales.Data.Repository;
 using NerdStore.Sales.Domain.Commands;
+using NerdStore.Sales.Domain.Contracts.Queries;
 using NerdStore.Sales.Domain.Contracts.Repository;
+using NerdStore.Sales.Domain.Events;
 using NerdStore.Sales.Domain.Handlers;
+using NerdStore.Sales.Domain.Queries;
 
 namespace NerdStore.Sales.Api
 {
@@ -34,7 +37,7 @@ namespace NerdStore.Sales.Api
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.AddDbContext<CatalogContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+				options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
 			services.AddControllers();
 
@@ -52,8 +55,13 @@ namespace NerdStore.Sales.Api
 			services.AddScoped<IOrderRepository, OrderRepository>();
 			services.AddScoped<IProductRepository, ProductRepository>();
 
-			services.AddScoped<DbContextOptions<CatalogContext>>();
-			
+			//Event
+			services.AddScoped<INotificationHandler<DraftOrderStartedEvent>, OrderEventHandler>();
+			services.AddScoped<INotificationHandler<OrderItemAddedEvent>, OrderEventHandler>();
+			services.AddScoped<INotificationHandler<OrderItemUpdatedEvent>, OrderEventHandler>();
+
+			//Queries
+			services.AddScoped<IOrderQueries, OrderQueries>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

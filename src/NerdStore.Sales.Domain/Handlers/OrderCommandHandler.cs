@@ -4,6 +4,7 @@ using NerdStore.Core.Messages;
 using NerdStore.Core.Messages.CommonMessages.Notifications;
 using NerdStore.Sales.Domain.Commands;
 using NerdStore.Sales.Domain.Contracts.Repository;
+using NerdStore.Sales.Domain.Events;
 using NerdStore.Sales.Domain.Models;
 using System.Threading;
 using System.Threading.Tasks;
@@ -32,6 +33,7 @@ namespace NerdStore.Sales.Domain.Handlers
 			{
 				order.AddItem(orderItem);
 				_orderRepository.AddOrder(order);
+				order.AddEvent(new DraftOrderStartedEvent(addOrderItemCommand.ClientId, order.Id));
 			}
 			else
 			{
@@ -40,7 +42,12 @@ namespace NerdStore.Sales.Domain.Handlers
 					order.UpdateOrderITem(orderItem);
 					_orderRepository.UpdateOrderItem(order);
 				}
+
+				order.AddEvent(new OrderItemUpdatedEvent(addOrderItemCommand.ClientId, order.Id, order.TotalValue));
 			}
+
+			order.AddEvent(new OrderItemAddedEvent(addOrderItemCommand.ClientId, order.Id, addOrderItemCommand.ProductId,
+						addOrderItemCommand.UnitaryValue, addOrderItemCommand.Quantity));
 
 			return await _orderRepository.UnitOfWork.Commit();
 		}

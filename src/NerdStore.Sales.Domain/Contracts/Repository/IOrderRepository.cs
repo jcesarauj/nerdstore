@@ -1,6 +1,8 @@
 ﻿using NerdStore.Core.Contracts.Data;
 using NerdStore.Sales.Domain.Models;
 using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace NerdStore.Sales.Domain.Contracts.Repository
 {
@@ -14,5 +16,8 @@ namespace NerdStore.Sales.Domain.Contracts.Repository
 		void AddOrderItem(Order order);
 		void UpdateOrderItem(Order order);
 		void GetOrderItemById(int orderItemId);
+		Task<Order> GetOrderDraftByClientId(Guid clientId);
+
+		Task<IEnumerable<Order>> GetOrdersByClientId(Guid clienteId);
 	}
 }

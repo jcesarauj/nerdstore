@@ -50,5 +50,18 @@ namespace NerdStore.Core.DomainObjects
 
 			return StatusCode((int)HttpStatusCode.InternalServerError, error);
 		}
+
+		protected IActionResult Error(string errorMessage, string errorCode, HttpStatusCode httpStatusCode)
+		{
+			var error = new
+			{
+				ErrorMessages = new List<Error>()
+				{
+					new Error(errorCode, errorMessage)
+				}
+			};
+
+			return StatusCode((int)httpStatusCode, error);
+		}
 	}
 }

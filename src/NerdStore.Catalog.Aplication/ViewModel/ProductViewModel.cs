@@ -7,6 +7,8 @@ namespace NerdStore.Catalog.Application.ViewModel
 	{
 		public ProductViewModel(Product product)
 		{
+			if (product == null) return;
+
 			ProductId = product.Id;
 			Name = product.Name;
 			Description = product.Description;

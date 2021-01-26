@@ -14,7 +14,7 @@ namespace NerdStore.Catalog.Data.Repository
 
 		public ProductRepository(CatalogContext catalogContext)
 		{
-			_catalogContext = catalogContext;			
+			_catalogContext = catalogContext;
 		}
 
 		public IUnitOfWork UnitOfWork => _catalogContext;
@@ -31,7 +31,8 @@ namespace NerdStore.Catalog.Data.Repository
 
 		public async Task<Product> GetById(Guid productId)
 		{
-			return await _catalogContext.Products.AsNoTracking().FirstAsync(p => p.Id == productId);
+			var product = await _catalogContext.Products.AsNoTracking().FirstOrDefaultAsync(p => p.Id == productId);
+			return product;
 		}
 
 		public async Task<IEnumerable<Product>> List()

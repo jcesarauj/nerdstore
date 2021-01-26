@@ -11,8 +11,8 @@ namespace NerdStore.Core.Messages
 	{
 		protected Event()
 		{
-			TimeStamp = DateTime.Now;
+			CreateDate = DateTime.Now;
 		}
-		public DateTime TimeStamp { get; private set; }
+		public DateTime CreateDate { get; private set; }
 	}
 }

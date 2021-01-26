@@ -33,7 +33,8 @@ namespace NerdStore.Catalog.Application.Services
 		public async Task<ProductViewModel> GetById(Guid productId)
 		{
 			var product = await _productRepository.GetById(productId);
-			return new ProductViewModel(product);
+			var productViewModel = (product != null ? new ProductViewModel(product) : null);
+			return productViewModel;
 		}
 
 		public Task<IEnumerable<ProductViewModel>> List()
