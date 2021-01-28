@@ -16,9 +16,11 @@ using NerdStore.Core.Contracts.Mediator;
 using NerdStore.Core.Messages.CommonMessages.Notifications;
 using NerdStore.Sales.Data.Repository;
 using NerdStore.Sales.Domain.Commands;
+using NerdStore.Sales.Domain.Commands.Order;
 using NerdStore.Sales.Domain.Contracts.Queries;
 using NerdStore.Sales.Domain.Contracts.Repository;
 using NerdStore.Sales.Domain.Events;
+using NerdStore.Sales.Domain.Events.Order;
 using NerdStore.Sales.Domain.Handlers;
 using NerdStore.Sales.Domain.Queries;
 

@@ -9,9 +9,9 @@ namespace NerdStore.Core.DomainObjects
 		private List<Event> _notifications;
 
 		public Guid Id { get; set; }
-		public DateTime CreateDate { get; private set; }
-		public DateTime UpdateDate { get; private set; }
-		protected bool Active { get; set; }
+		public DateTime CreateDate { get; protected set; }
+		public DateTime UpdateDate { get; protected set; }
+		public bool Active { get; protected set; }
 
 		protected Entity()
 		{

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NerdStore.Sales.Domain.Models
+namespace NerdStore.Sales.Domain.Models.Order
 {
 	public class OrderItem : Entity
 	{

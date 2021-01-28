@@ -1,12 +1,11 @@
-﻿using NerdStore.Core.Contracts;
+﻿using FluentValidation.Results;
+using NerdStore.Core.Contracts;
 using NerdStore.Core.DomainObjects;
 using NerdStore.Sales.Domain.Enums;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace NerdStore.Sales.Domain.Models
+namespace NerdStore.Sales.Domain.Models.Order
 {
 	public class Order : Entity, IAggregateRoot
 	{
@@ -56,12 +55,33 @@ namespace NerdStore.Sales.Domain.Models
 
 		public void UpdateOrderITem(OrderItem orderItem)
 		{
-			
+
+		}
+
+		public ValidationResult ApplyVoucher(Voucher voucher)
+		{
+			return null;
 		}
 
 		public void UpdateStatus(OrderStatusEnum orderStatus)
 		{
 			OrderStatus = orderStatus;
 		}
+
+		public void RemoveItem(OrderItem orderItem)
+		{
+		}
+
+		public bool OrderItemExist(OrderItem orderItem)
+		{
+			return true;
+		}
+
+		public bool UpdateUnits(OrderItem orderItem, int number)
+		{
+			return true;
+		}
+
+
 	}
 }

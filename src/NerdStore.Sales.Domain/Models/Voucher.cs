@@ -2,7 +2,7 @@
 using NerdStore.Sales.Domain.Enums;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using order = NerdStore.Sales.Domain.Models.Order;
 
 namespace NerdStore.Sales.Domain.Models
 {
@@ -19,6 +19,6 @@ namespace NerdStore.Sales.Domain.Models
 		public DateTime ValidDate { get; private set; }
 		public DateTime IsUtilized { get; private set; }
 
-		public virtual ICollection<Order> Orders { get; private set; }
+		public virtual ICollection<order.Order> Orders { get; private set; }
 	}
 }

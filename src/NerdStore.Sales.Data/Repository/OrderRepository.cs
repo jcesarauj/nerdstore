@@ -3,7 +3,9 @@ using NerdStore.Catalog.Data;
 using NerdStore.Core.Contracts.Data;
 using NerdStore.Sales.Domain.Contracts.Repository;
 using NerdStore.Sales.Domain.Models;
+using NerdStore.Sales.Domain.Models.Order;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace NerdStore.Sales.Data.Repository
@@ -74,6 +76,56 @@ namespace NerdStore.Sales.Data.Repository
 			}
 
 			return order;
+		}		
+
+		public Task<Voucher> GetVoucherByVoucherCode(string voucherCode)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<IEnumerable<Order>> GetOrdersByClientId(Guid clienteId)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Add(Order order)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Update(Order order)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void GetById(int orderId)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<Order> GetByClientId(Guid clientId)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void RemoveOrderItem(OrderItem order)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void UpdateOrderItem(OrderItem order)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<OrderItem> GetOrderItemById(Guid orderItemId, Guid productId)
+		{
+			throw new NotImplementedException();
+		}
+
+		public Task<OrderItem> GetItemByOrderId(Guid orderItemId, Guid productId)
+		{
+			throw new NotImplementedException();
 		}
 	}
 }

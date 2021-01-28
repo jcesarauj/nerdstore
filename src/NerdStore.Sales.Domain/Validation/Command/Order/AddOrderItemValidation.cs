@@ -1,8 +1,9 @@
 ﻿using FluentValidation;
 using NerdStore.Sales.Domain.Commands;
+using NerdStore.Sales.Domain.Commands.Order;
 using System;
 
-namespace NerdStore.Sales.Domain.Validation
+namespace NerdStore.Sales.Domain.Validation.Command.Order
 {
 	public class AddOrderItemValidation : AbstractValidator<AddOrderItemCommand>
 	{

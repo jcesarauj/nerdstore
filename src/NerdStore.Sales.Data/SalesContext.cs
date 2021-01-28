@@ -4,6 +4,7 @@ using NerdStore.Core.Contracts.Mediator;
 using NerdStore.Core.Messages;
 using NerdStore.Sales.Data;
 using NerdStore.Sales.Domain.Models;
+using NerdStore.Sales.Domain.Models.Order;
 using System.Threading.Tasks;
 
 namespace NerdStore.Catalog.Data

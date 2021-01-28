@@ -1,10 +1,6 @@
 ﻿using MediatR;
 using NerdStore.Core.Contracts.Mediator;
-using NerdStore.Sales.Domain.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using NerdStore.Sales.Domain.Events.Order;
 using System.Threading;
 using System.Threading.Tasks;
 

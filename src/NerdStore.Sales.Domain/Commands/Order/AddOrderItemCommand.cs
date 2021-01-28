@@ -1,8 +1,9 @@
 ﻿using NerdStore.Core.Messages;
 using NerdStore.Sales.Domain.Validation;
+using NerdStore.Sales.Domain.Validation.Command.Order;
 using System;
 
-namespace NerdStore.Sales.Domain.Commands
+namespace NerdStore.Sales.Domain.Commands.Order
 {
 	public class AddOrderItemCommand : Command
 	{
