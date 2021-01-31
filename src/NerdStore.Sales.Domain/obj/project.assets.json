@@ -2566,6 +2566,20 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "NerdStore.Catalog.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "NerdStore.Core": "1.0.0",
+          "mediatr": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NerdStore.Catalog.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NerdStore.Catalog.Domain.dll": {}
+        }
+      },
       "NerdStore.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7855,6 +7869,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "NerdStore.Catalog.Domain/1.0.0": {
+      "type": "project",
+      "path": "../NerdStore.Catalog.Domain/NerdStore.Catalog.Domain.csproj",
+      "msbuildProject": "../NerdStore.Catalog.Domain/NerdStore.Catalog.Domain.csproj"
+    },
     "NerdStore.Core/1.0.0": {
       "type": "project",
       "path": "../NerdStore.Core/NerdStore.Core.csproj",
@@ -7863,6 +7882,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "NerdStore.Catalog.Domain >= 1.0.0",
       "NerdStore.Core >= 1.0.0"
     ]
   },
@@ -7897,6 +7917,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+            },
             "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
               "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
             }

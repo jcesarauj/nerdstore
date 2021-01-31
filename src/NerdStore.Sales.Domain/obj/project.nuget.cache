@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5n7kMzmQSIsZw8X7P+lZpzVESJTKGEoIr8w/igDb629FFrDawCisqcOPqSjDcWehCDTIw1z6DD/ZgyUhv8cT2w==",
+  "dgSpecHash": "Yf79CH4AnuvVziUW5IpwbZqjpEoWRFgdfk7yFtcPju2HZ00Gy1ZI/pck0A6S1x/UxG/XMGq3Aon8RypTsWCwXw==",
   "success": true,
   "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
   "expectedPackageFiles": [

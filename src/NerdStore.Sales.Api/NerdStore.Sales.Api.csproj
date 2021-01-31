@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NerdStore.Catalog.Aplication\NerdStore.Catalog.Application.csproj" />
+    <ProjectReference Include="..\NerdStore.Catalog.Domain\NerdStore.Catalog.Domain.csproj" />
     <ProjectReference Include="..\NerdStore.Catalog.Repository\NerdStore.Catalog.Data.csproj" />
     <ProjectReference Include="..\NerdStore.Core\NerdStore.Core.csproj" />
     <ProjectReference Include="..\NerdStore.Sales.Data\NerdStore.Sales.Data.csproj" />

@@ -2,6 +2,7 @@
 using NerdStore.Catalog.Domain.Contracts.Service;
 using NerdStore.Catalog.Domain.Events;
 using NerdStore.Core.Contracts.Mediator;
+using NerdStore.Core.Messages.CommonMessages.Notifications;
 using System;
 using System.Threading.Tasks;
 
@@ -10,11 +11,11 @@ namespace NerdStore.Catalog.Domain.Service
 	public class StockService : IStockService
 	{
 		private readonly IProductRepository _productRepository;
-		private readonly IMediatorHandler _mediaTrHandler;
-		public StockService(IProductRepository productRepository, IMediatorHandler mediaTrHandler)
+		private readonly IMediatorHandler _mediatorHandler;
+		public StockService(IProductRepository productRepository, IMediatorHandler mediatorHandler)
 		{
 			_productRepository = productRepository;
-			_mediaTrHandler = mediaTrHandler;
+			_mediatorHandler = mediatorHandler;
 		}
 		public async Task<bool> CreditStock(Guid productId, int quantity)
 		{
@@ -28,7 +29,7 @@ namespace NerdStore.Catalog.Domain.Service
 
 			if (product.QuantityInStock < 10)
 			{
-				await _mediaTrHandler.PublishEvent(new ProductBelowStockEvent(product.Id, product.QuantityInStock));
+				await _mediatorHandler.PublishEvent(new ProductBelowStockEvent(product.Id, product.QuantityInStock));
 			}
 
 			_productRepository.Update(product);
@@ -49,6 +50,29 @@ namespace NerdStore.Catalog.Domain.Service
 			_productRepository.Update(product);
 
 			return await _productRepository.UnitOfWork.Commit();
+		}
+
+		private async Task<bool> DebitarStockItem(Guid productId, int quantity)
+		{
+			var product = await _productRepository.GetById(productId);
+
+			if (product == null) return false;
+
+			if (!product.HasStock(quantity))
+			{
+				await _mediatorHandler.PublishNotification(new DomainNotification("Estoque", $"Produto - {product.Name} sem estoque"));
+				return false;
+			}
+
+			product.DebitStock(quantity);
+
+			if (product.QuantityInStock < 10)
+			{
+				await _mediatorHandler.PublishEvent(new ProductBelowStockEvent(product.Id, product.QuantityInStock));
+			}
+
+			_productRepository.Update(product);
+			return true;
 		}
 
 

@@ -27,6 +27,7 @@
         "dependencies": {
           "NerdStore.Catalog.Application": "1.0.0",
           "NerdStore.Catalog.Data": "1.0.0",
+          "NerdStore.Catalog.Domain": "1.0.0",
           "NerdStore.Core": "1.0.0",
           "NerdStore.Sales.Data": "1.0.0",
           "NerdStore.Sales.Domain": "1.0.0",

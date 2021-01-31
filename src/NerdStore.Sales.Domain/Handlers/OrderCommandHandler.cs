@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using NerdStore.Core.Contracts.Mediator;
+using NerdStore.Core.DomainObjects.Dtos.Order;
 using NerdStore.Core.Messages;
 using NerdStore.Core.Messages.CommonMessages.Notifications;
 using NerdStore.Sales.Domain.Commands.Order;
@@ -9,6 +10,8 @@ using NerdStore.Sales.Domain.Models.Order;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Linq;
+using NerdStore.Core.Extensions;
 
 namespace NerdStore.Sales.Domain.Handlers
 {
@@ -16,7 +19,7 @@ namespace NerdStore.Sales.Domain.Handlers
 		 IRequestHandler<ApplyVoucherOrderCommand, bool>,
 		IRequestHandler<RemoveItemOrderCommand, bool>,
 		IRequestHandler<UpdateItemOrderCommand, bool>,
-		IRequestHandler<StartOrderCommand, bool>,
+		IRequestHandler<StartOrderCommand, bool>
 	{
 		private readonly IOrderRepository _orderRepository;
 		private readonly IMediatorHandler _mediatorHandler;
@@ -161,10 +164,10 @@ namespace NerdStore.Sales.Domain.Handlers
 			order.UpdateStatus(Enums.OrderStatusEnum.Started);
 
 			var itensList = new List<Item>();
-			order.OrderItems.ForEach(i => itensList.Add(new Item { Id = i.ProdutoId, Quantidade = i.Quantidade }));
-			var listaProdutosPedido = new ListaProdutosPedido { PedidoId = order.Id, Itens = itensList };
+			order.OrderItems.ForEach(i => itensList.Add(new Item { Id = i.ProductId, Quantity = i.Quantity }));
+			var listProductOrder = new ListProductsOrder { OrderId = order.Id, Itens = itensList };
 
-			order.AddEvent(new StartOrderEvent(order.Id, order.ClientId, listaProdutosPedido, order.TotalValue, startOrderCommand.CardName, startOrderCommand.CardNumber, startOrderCommand.Expiration, startOrderCommand.Cvv));
+			order.AddEvent(new StartOderEvent(order.Id, order.ClientId, order.TotalValue, listProductOrder, startOrderCommand.CardName, startOrderCommand.CardNumber, startOrderCommand.Expiration, startOrderCommand.Cvv));
 
 			_orderRepository.Update(order);
 			return await _orderRepository.UnitOfWork.Commit();
