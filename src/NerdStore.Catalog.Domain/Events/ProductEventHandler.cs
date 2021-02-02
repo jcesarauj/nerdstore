@@ -14,8 +14,8 @@ using System.Threading.Tasks;
 namespace NerdStore.Catalog.Domain.Events
 {
 	public class ProductEventHandler : INotificationHandler<ProductBelowStockEvent>,
-		INotificationHandler<StartOderEvent>//,
-											//INotificationHandler<PedidoProcessamentoCanceladoEvent>
+		INotificationHandler<StartOderEvent>,
+		INotificationHandler<OrderProcessCancelEvent>
 	{
 		private readonly IProductRepository _productRepository;
 		private readonly IMediatorHandler _mediatorHandler;
@@ -40,13 +40,18 @@ namespace NerdStore.Catalog.Domain.Events
 
 			if (result)
 			{
-				await _mediatorHandler.PublishEvent(new OrderStockConfirmedEvent(startOderEvent.OrderId, startOderEvent.ClientId, startOderEvent.Total, startOderEvent.ProductsOrder, startOderEvent.NomeCartao,
+				await _mediatorHandler.PublishEvent(new OrderStockConfirmedEvent(startOderEvent.OrderId, startOderEvent.ClientId, startOderEvent.Total, startOderEvent.ProductsOrder, startOderEvent.CardName,
 					startOderEvent.CardNumber, startOderEvent.Expiration, startOderEvent.Cvv));
 			}
 			else
 			{
 				await _mediatorHandler.PublishEvent(new OrderStockRejectedEvent(startOderEvent.OrderId, startOderEvent.ClientId));
 			}
+		}
+
+		public async Task Handle(OrderProcessCancelEvent orderProcessCancelEvent, CancellationToken cancellationToken)
+		{
+			await _stockService.PutListProductsOrder(orderProcessCancelEvent.ProductsOrder);
 		}
 	}
 }

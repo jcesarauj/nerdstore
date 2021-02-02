@@ -1,6 +1,7 @@
 ﻿using FluentValidation.Results;
 using NerdStore.Core.Contracts;
 using NerdStore.Core.DomainObjects;
+using NerdStore.Core.Messages;
 using NerdStore.Sales.Domain.Enums;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ namespace NerdStore.Sales.Domain.Models.Order
 	public class Order : Entity, IAggregateRoot
 	{
 		private readonly List<OrderItem> _orderItems;
+		private List<Event> _notifications;
+		public IReadOnlyCollection<Event> Notifications => _notifications?.AsReadOnly();
 
 		protected Order()
 		{
@@ -80,6 +83,23 @@ namespace NerdStore.Sales.Domain.Models.Order
 		public bool UpdateUnits(OrderItem orderItem, int number)
 		{
 			return true;
+		}
+
+		public void AddEvent(Event evento)
+		{
+			_notifications = _notifications ?? new List<Event>();
+			_notifications.Add(evento);
+		}
+
+
+		public void SetDone()
+		{
+			this.OrderStatus = OrderStatusEnum.Paid;
+		}
+
+		public void SetDraft()
+		{
+			this.OrderStatus = OrderStatusEnum.Draft;
 		}
 
 

@@ -29,11 +29,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalog.Data", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Catalog.Application", "src\NerdStore.Catalog.Aplication\NerdStore.Catalog.Application.csproj", "{E2CE431C-8EF1-4B76-B226-5957B154C7E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Sales.Domain", "src\NerdStore.Sales.Domain\NerdStore.Sales.Domain.csproj", "{641ED0D0-C8DF-4E57-94B8-07FB0AA6FAEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Sales.Domain", "src\NerdStore.Sales.Domain\NerdStore.Sales.Domain.csproj", "{641ED0D0-C8DF-4E57-94B8-07FB0AA6FAEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Sales.Data", "src\NerdStore.Sales.Data\NerdStore.Sales.Data.csproj", "{6A410E4B-7649-4A4A-9F17-770D4B448C32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Sales.Data", "src\NerdStore.Sales.Data\NerdStore.Sales.Data.csproj", "{6A410E4B-7649-4A4A-9F17-770D4B448C32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Sales.Api", "src\NerdStore.Sales.Api\NerdStore.Sales.Api.csproj", "{8C3EDE16-E014-4530-BDCD-62579C6AEEC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NerdStore.Sales.Api", "src\NerdStore.Sales.Api\NerdStore.Sales.Api.csproj", "{8C3EDE16-E014-4530-BDCD-62579C6AEEC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Payments.Data", "src\NerdStore.Payments.Data\NerdStore.Payments.Data.csproj", "{DC3B6582-695E-400F-814A-BF0F10FC542B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Payments.Business", "src\NerdStore.Payments.Business\NerdStore.Payments.Business.csproj", "{3F63BA6A-F31F-4E5D-8166-4BC9A7E079F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NerdStore.Payments.AntiCorruption", "NerdStore.Payments.AntiCorruption\NerdStore.Payments.AntiCorruption.csproj", "{5920086E-8BCE-457B-8671-B97A08869799}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +79,18 @@ Global
 		{8C3EDE16-E014-4530-BDCD-62579C6AEEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C3EDE16-E014-4530-BDCD-62579C6AEEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C3EDE16-E014-4530-BDCD-62579C6AEEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC3B6582-695E-400F-814A-BF0F10FC542B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3B6582-695E-400F-814A-BF0F10FC542B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3B6582-695E-400F-814A-BF0F10FC542B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3B6582-695E-400F-814A-BF0F10FC542B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F63BA6A-F31F-4E5D-8166-4BC9A7E079F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F63BA6A-F31F-4E5D-8166-4BC9A7E079F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F63BA6A-F31F-4E5D-8166-4BC9A7E079F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F63BA6A-F31F-4E5D-8166-4BC9A7E079F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5920086E-8BCE-457B-8671-B97A08869799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5920086E-8BCE-457B-8671-B97A08869799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5920086E-8BCE-457B-8671-B97A08869799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5920086E-8BCE-457B-8671-B97A08869799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +110,9 @@ Global
 		{641ED0D0-C8DF-4E57-94B8-07FB0AA6FAEF} = {1315E45D-BF84-4A24-AAA8-B6FF08B6EF1F}
 		{6A410E4B-7649-4A4A-9F17-770D4B448C32} = {1315E45D-BF84-4A24-AAA8-B6FF08B6EF1F}
 		{8C3EDE16-E014-4530-BDCD-62579C6AEEC6} = {1315E45D-BF84-4A24-AAA8-B6FF08B6EF1F}
+		{DC3B6582-695E-400F-814A-BF0F10FC542B} = {1C306AE0-DED8-46F4-81B7-4ACE927A04CB}
+		{3F63BA6A-F31F-4E5D-8166-4BC9A7E079F1} = {1C306AE0-DED8-46F4-81B7-4ACE927A04CB}
+		{5920086E-8BCE-457B-8671-B97A08869799} = {1C306AE0-DED8-46F4-81B7-4ACE927A04CB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02EACF63-F518-4856-A682-8C63261A5FB4}

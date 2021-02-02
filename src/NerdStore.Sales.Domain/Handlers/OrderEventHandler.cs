@@ -2,7 +2,9 @@
 using NerdStore.Catalog.Domain.Contracts.Service;
 using NerdStore.Core.Contracts.Mediator;
 using NerdStore.Core.Messages.CommonMessages.IntegrationEvents;
+using NerdStore.Sales.Domain.Commands.Order;
 using NerdStore.Sales.Domain.Events.Order;
+using NerdStore.Vendas.Application.Commands;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -13,9 +15,9 @@ namespace NerdStore.Sales.Domain.Handlers
 		INotificationHandler<DraftOrderStartedEvent>,
 		INotificationHandler<OrderItemAddedEvent>,
 		INotificationHandler<OrderItemUpdatedEvent>,
-		INotificationHandler<OrderStockRejectedEvent>/*,
-		INotificationHandler<PedidoPagamentoRealizadoEvent>,
-		INotificationHandler<PedidoPagamentoRecusadoEvent>*/
+		INotificationHandler<OrderStockRejectedEvent>,
+		INotificationHandler<OrderPaymentRealizedEvent>,
+		INotificationHandler<OrderPaymentRefusedEvent>
 	{
 
 		private readonly IMediatorHandler _mediatorHandler;
@@ -27,17 +29,17 @@ namespace NerdStore.Sales.Domain.Handlers
 			_stockService = stockService;
 		}
 
-		public async Task Handle(DraftOrderStartedEvent draftOrderStartedEvent, CancellationToken cancellationToken)
+		public Task Handle(DraftOrderStartedEvent draftOrderStartedEvent, CancellationToken cancellationToken)
 		{
 			return Task.CompletedTask;
 		}
 
-		public async Task Handle(OrderItemAddedEvent orderItemAddedEvent, CancellationToken cancellationToken)
+		public Task Handle(OrderItemAddedEvent orderItemAddedEvent, CancellationToken cancellationToken)
 		{
 			return Task.CompletedTask;
 		}
 
-		public async Task Handle(OrderItemUpdatedEvent orderItemUpdatedEvent, CancellationToken cancellationToken)
+		public Task Handle(OrderItemUpdatedEvent orderItemUpdatedEvent, CancellationToken cancellationToken)
 		{
 			return Task.CompletedTask;
 		}
@@ -45,6 +47,16 @@ namespace NerdStore.Sales.Domain.Handlers
 		public async Task Handle(OrderStockRejectedEvent orderStockRejectedEvent, CancellationToken cancellationToken)
 		{
 			await _mediatorHandler.SendCommand(new CancelProcessOrderCommand(orderStockRejectedEvent.OrderId, orderStockRejectedEvent.ClientId));
+		}
+
+		public async Task Handle(OrderPaymentRealizedEvent orderPaymentRealizedEvent, CancellationToken cancellationToken)
+		{
+			await _mediatorHandler.SendCommand(new FinalizeOrderCommand(orderPaymentRealizedEvent.OrderId, orderPaymentRealizedEvent.ClientId));
+		}
+
+		public async Task Handle(OrderPaymentRefusedEvent orderPaymentRefusedEvent, CancellationToken cancellationToken)
+		{
+			await _mediatorHandler.SendCommand(new CancelProcessOrderReverseStockCommand(orderPaymentRefusedEvent.OrderId, orderPaymentRefusedEvent.ClientId));
 		}
 	}
 }

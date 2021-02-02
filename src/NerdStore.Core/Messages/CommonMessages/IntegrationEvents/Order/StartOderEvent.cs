@@ -14,12 +14,12 @@ namespace NerdStore.Core.Messages.CommonMessages.IntegrationEvents.Order
 		public string Expiration { get; private set; }
 		public string Cvv { get; private set; }
 
-		public StartOderEvent(Guid orderId, Guid clientId, decimal total, ListProductsOrder produtosPedido, string cardName, string cardNumber, string expiration, string cvv)
+		public StartOderEvent(Guid orderId, Guid clientId, decimal total, ListProductsOrder productsOrder, string cardName, string cardNumber, string expiration, string cvv)
 		{
 			OrderId = orderId;
 			ClientId = clientId;
 			Total = total;
-			ProdutosPedido = produtosPedido;
+			ProductsOrder = productsOrder;
 			CardName = cardName;
 			CardNumber = cardNumber;
 			Expiration = expiration;

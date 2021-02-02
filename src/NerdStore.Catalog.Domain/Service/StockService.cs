@@ -2,6 +2,7 @@
 using NerdStore.Catalog.Domain.Contracts.Service;
 using NerdStore.Catalog.Domain.Events;
 using NerdStore.Core.Contracts.Mediator;
+using NerdStore.Core.DomainObjects.Dtos.Order;
 using NerdStore.Core.Messages.CommonMessages.Notifications;
 using System;
 using System.Threading.Tasks;
@@ -37,6 +38,11 @@ namespace NerdStore.Catalog.Domain.Service
 			return await _productRepository.UnitOfWork.Commit();
 		}
 
+		public Task<bool> DebitListProductsOrder(ListProductsOrder list)
+		{
+			throw new NotImplementedException();
+		}
+
 		public async Task<bool> DebitStock(Guid productId, int quantity)
 		{
 			var product = await _productRepository.GetById(productId);
@@ -50,6 +56,11 @@ namespace NerdStore.Catalog.Domain.Service
 			_productRepository.Update(product);
 
 			return await _productRepository.UnitOfWork.Commit();
+		}
+
+		public Task<bool> PutListProductsOrder(ListProductsOrder lista)
+		{
+			throw new NotImplementedException();
 		}
 
 		private async Task<bool> DebitarStockItem(Guid productId, int quantity)

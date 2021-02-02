@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\NerdStore.Catalog.Domain\NerdStore.Catalog.Domain.csproj" />
+    <ProjectReference Include="..\src\NerdStore.Payments.Business\NerdStore.Payments.Business.csproj" />
+    <ProjectReference Include="..\src\NerdStore.Sales.Domain\NerdStore.Sales.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

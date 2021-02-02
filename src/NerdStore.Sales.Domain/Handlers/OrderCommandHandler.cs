@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Linq;
 using NerdStore.Core.Extensions;
+using NerdStore.Vendas.Application.Commands;
 
 namespace NerdStore.Sales.Domain.Handlers
 {
@@ -19,7 +20,9 @@ namespace NerdStore.Sales.Domain.Handlers
 		 IRequestHandler<ApplyVoucherOrderCommand, bool>,
 		IRequestHandler<RemoveItemOrderCommand, bool>,
 		IRequestHandler<UpdateItemOrderCommand, bool>,
-		IRequestHandler<StartOrderCommand, bool>
+		IRequestHandler<StartOrderCommand, bool>,
+		IRequestHandler<FinalizeOrderCommand, bool>,
+		IRequestHandler<CancelProcessOrderReverseStockCommand, bool>
 	{
 		private readonly IOrderRepository _orderRepository;
 		private readonly IMediatorHandler _mediatorHandler;
@@ -170,6 +173,42 @@ namespace NerdStore.Sales.Domain.Handlers
 			order.AddEvent(new StartOderEvent(order.Id, order.ClientId, order.TotalValue, listProductOrder, startOrderCommand.CardName, startOrderCommand.CardNumber, startOrderCommand.Expiration, startOrderCommand.Cvv));
 
 			_orderRepository.Update(order);
+			return await _orderRepository.UnitOfWork.Commit();
+		}
+
+		public async Task<bool> Handle(FinalizeOrderCommand finalizeOrderCommand, CancellationToken cancellationToken)
+		{
+			var order = await _orderRepository.GetById(finalizeOrderCommand.OrderId);
+
+			if (order == null)
+			{
+				await _mediatorHandler.PublishNotification(new DomainNotification("pedido", "Pedido não encontrado!"));
+				return false;
+			}
+
+			order.SetDone();
+
+			order.AddEvent(new OrderFinalizedEvent(finalizeOrderCommand.OrderId));
+			return await _orderRepository.UnitOfWork.Commit();
+		}
+
+		public async Task<bool> Handle(CancelProcessOrderReverseStockCommand cancelProcessOrderReverseStockCommand, CancellationToken cancellationToken)
+		{
+			var order = await _orderRepository.GetById(cancelProcessOrderReverseStockCommand.OrderId);
+
+			if (order == null)
+			{
+				await _mediatorHandler.PublishNotification(new DomainNotification("pedido", "Pedido não encontrado!"));
+				return false;
+			}
+
+			var itensList = new List<Item>();
+			order.OrderItems.ForEach(i => itensList.Add(new Item { Id = i.ProductId, Quantity = i.Quantity }));
+			var listaProdutosPedido = new ListProductsOrder { OrderId = order.Id, Itens = itensList };
+
+			order.AddEvent(new OrderProcessCancelEvent(order.Id, order.ClientId, listaProdutosPedido));
+			order.SetDraft();
+
 			return await _orderRepository.UnitOfWork.Commit();
 		}
 

@@ -12,7 +12,7 @@ namespace NerdStore.Sales.Domain.Contracts.Repository
 	{
 		void Add(order.Order order);
 		void Update(order.Order order);
-		void GetById(int orderId);
+		Task<order.Order> GetById(Guid orderId);
 		Task<order.Order> GetByClientId(Guid clientId);
 		Task<Voucher> GetVoucherByVoucherCode(string voucherCode);
 		
