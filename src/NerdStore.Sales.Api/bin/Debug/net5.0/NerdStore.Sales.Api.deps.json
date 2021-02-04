@@ -2305,6 +2305,7 @@
       },
       "NerdStore.Sales.Domain/1.0.0": {
         "dependencies": {
+          "NerdStore.Catalog.Domain": "1.0.0",
           "NerdStore.Core": "1.0.0"
         },
         "runtime": {

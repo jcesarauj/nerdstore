@@ -127,5 +127,10 @@ namespace NerdStore.Sales.Data.Repository
 		{
 			throw new NotImplementedException();
 		}
+
+		public Task<Order> GetById(Guid orderId)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

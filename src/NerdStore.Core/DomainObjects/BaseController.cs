@@ -6,6 +6,7 @@ using NerdStore.Core.Contracts.Mediator;
 using NerdStore.Core.Messages.CommonMessages.Notifications;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 
 namespace NerdStore.Core.DomainObjects
@@ -28,6 +29,11 @@ namespace NerdStore.Core.DomainObjects
 			return (!_notifications.HasNotifications());
 		}
 
+		protected IEnumerable<string> GetErrorMessage()
+		{
+			return _notifications.GetNotifications().Select(c => c.Value).ToList();
+		}
+
 		protected void NotifyError(string code, string message)
 		{
 			_mediatorHandler.PublishNotification(new DomainNotification(code, message));
@@ -35,13 +41,23 @@ namespace NerdStore.Core.DomainObjects
 
 		protected new IActionResult Response<T>(T result)
 		{
-			return Ok(new { Data = result });
+			if (ValidOperation())
+				return Ok(new { Success = true, Data = result });
+			else return BadRequest(new
+			{
+				Success = false,
+				ErrorMessages = new List<Error>()
+				{
+					new Error(HttpStatusCode.BadRequest.ToString(), String.Join(" ", GetErrorMessage()))
+				}
+			});
 		}
 
 		protected IActionResult Error(Exception ex)
 		{
 			var error = new
 			{
+				Success = false,
 				ErrorMessages = new List<Error>()
 				{
 					new Error(ex.HResult.ToString(), ex.Message)

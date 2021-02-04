@@ -1793,6 +1793,15 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "NerdStore.Catalog.Domain/1.0.0": {
+        "dependencies": {
+          "NerdStore.Core": "1.0.0",
+          "MediatR": "9.0.0"
+        },
+        "runtime": {
+          "NerdStore.Catalog.Domain.dll": {}
+        }
+      },
       "NerdStore.Core/1.0.0": {
         "dependencies": {
           "FluentValidation": "9.4.0",
@@ -1808,6 +1817,7 @@
       },
       "NerdStore.Sales.Domain/1.0.0": {
         "dependencies": {
+          "NerdStore.Catalog.Domain": "1.0.0",
           "NerdStore.Core": "1.0.0"
         },
         "runtime": {
@@ -3018,6 +3028,11 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "NerdStore.Catalog.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "NerdStore.Core/1.0.0": {
       "type": "project",

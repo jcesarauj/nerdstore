@@ -15,3 +15,5 @@ C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Data\obj\Debug\net5.0\NerdS
 C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Data\obj\Debug\net5.0\NerdStore.Sales.Data.dll
 C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Data\obj\Debug\net5.0\ref\NerdStore.Sales.Data.dll
 C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Sales.Data\obj\Debug\net5.0\NerdStore.Sales.Data.pdb
+C:\nerdstore\NerdStore\NerdStore\src\NerdStore.Sales.Data\bin\Debug\net5.0\NerdStore.Catalog.Domain.dll
+C:\nerdstore\NerdStore\NerdStore\src\NerdStore.Sales.Data\bin\Debug\net5.0\NerdStore.Catalog.Domain.pdb

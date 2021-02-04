@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using NerdStore.Core.Extensions;
 using NerdStore.Vendas.Application.Commands;
+using NerdStore.Core.Messages.CommonMessages.IntegrationEvents;
 
 namespace NerdStore.Sales.Domain.Handlers
 {
