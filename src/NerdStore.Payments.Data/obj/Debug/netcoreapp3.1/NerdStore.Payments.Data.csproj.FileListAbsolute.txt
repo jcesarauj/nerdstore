@@ -1,0 +1,9 @@
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\bin\Debug\netcoreapp3.1\NerdStore.Payments.Data.deps.json
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\bin\Debug\netcoreapp3.1\NerdStore.Payments.Data.dll
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\bin\Debug\netcoreapp3.1\NerdStore.Payments.Data.pdb
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\obj\Debug\netcoreapp3.1\NerdStore.Payments.Data.csprojAssemblyReference.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\obj\Debug\netcoreapp3.1\NerdStore.Payments.Data.AssemblyInfoInputs.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\obj\Debug\netcoreapp3.1\NerdStore.Payments.Data.AssemblyInfo.cs
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\obj\Debug\netcoreapp3.1\NerdStore.Payments.Data.csproj.CoreCompileInputs.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\obj\Debug\netcoreapp3.1\NerdStore.Payments.Data.dll
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Data\obj\Debug\netcoreapp3.1\NerdStore.Payments.Data.pdb

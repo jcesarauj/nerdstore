@@ -9527,11 +9527,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
+      "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
       "projectName": "NerdStore.Catalog.Application",
-      "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
+      "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
       "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-      "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\obj\\",
+      "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9551,11 +9551,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
+            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
             }
           }
         }

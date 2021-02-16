@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8AyffoHgN1xcbk2mj3SG1dIooHcttoMeXrO9kbNYVRUoGvFzB+M4/Q8Snp6p1+Ck/QqzvTJoe+RIqIu7oaAsqA==",
+  "dgSpecHash": "D0S4oZU2QriZgf41JSEOrN7t6tUOhzNBtjshihXGK8Vc7NIbN0xH+SeSRQP+GLq0i54Cx4lybjQG1b5C33x7Qg==",
   "success": true,
   "projectFilePath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj",
   "expectedPackageFiles": [

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {}
+    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {}
   },
   "projects": {
-    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "projectName": "NerdStore.Core",
-        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

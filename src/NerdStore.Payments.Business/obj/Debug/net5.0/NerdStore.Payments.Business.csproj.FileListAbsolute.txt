@@ -1,0 +1,15 @@
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\bin\Debug\net5.0\NerdStore.Payments.Business.deps.json
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\bin\Debug\net5.0\NerdStore.Payments.Business.dll
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\bin\Debug\net5.0\ref\NerdStore.Payments.Business.dll
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\bin\Debug\net5.0\NerdStore.Payments.Business.pdb
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\bin\Debug\net5.0\NerdStore.Core.dll
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\bin\Debug\net5.0\NerdStore.Core.pdb
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\NerdStore.Payments.Business.csprojAssemblyReference.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\NerdStore.Payments.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\NerdStore.Payments.Business.AssemblyInfoInputs.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\NerdStore.Payments.Business.AssemblyInfo.cs
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\NerdStore.Payments.Business.csproj.CoreCompileInputs.cache
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\NerdStore.Payments.Business.csproj.CopyComplete
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\NerdStore.Payments.Business.dll
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\ref\NerdStore.Payments.Business.dll
+C:\nerdstore\NerdStore\nerdstore\src\NerdStore.Payments.Business\obj\Debug\net5.0\NerdStore.Payments.Business.pdb
