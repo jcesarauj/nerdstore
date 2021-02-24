@@ -1,0 +1,10 @@
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\bin\Debug\nerdstore.database.dacpac
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\bin\Debug\nerdstore.database.dll
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\bin\Debug\nerdstore.database.pdb
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\obj\Debug\nerdstore.database.sqlprojAssemblyReference.cache
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\obj\Debug\Model.xml
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\obj\Debug\refactor.xml
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\obj\Debug\postdeploy.sql
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\obj\Debug\predeploy.sql
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\obj\Debug\nerdstore.database.dll
+C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\obj\Debug\nerdstore.database.pdb

@@ -1,0 +1,84 @@
+23/02/2021 21:46:17	This log contains information about the import schema operation into project 'nerdstore.database' on computer 'DESKTOP-QH57AJE' by user 'Julio'.
+23/02/2021 21:46:17	Import of database schema has started.
+23/02/2021 21:46:30	Gathering database credentials
+23/02/2021 21:46:30	Gathering database options
+23/02/2021 21:46:30	Gathering users
+23/02/2021 21:46:30	Gathering roles
+23/02/2021 21:46:30	Gathering application roles
+23/02/2021 21:46:30	Gathering role memberships
+23/02/2021 21:46:30	Gathering filegroups
+23/02/2021 21:46:30	Gathering full-text catalogs
+23/02/2021 21:46:30	Gathering assemblies
+23/02/2021 21:46:30	Gathering certificates
+23/02/2021 21:46:30	Gathering asymmetric keys
+23/02/2021 21:46:30	Gathering symmetric keys
+23/02/2021 21:46:30	Gathering encrypted symmetric keys
+23/02/2021 21:46:30	Gathering schemas
+23/02/2021 21:46:30	Gathering XML schema collections
+23/02/2021 21:46:30	Gathering user-defined data types
+23/02/2021 21:46:30	Gathering user-defined types
+23/02/2021 21:46:30	Gathering table types
+23/02/2021 21:46:30	Gathering unique keys for table types
+23/02/2021 21:46:30	Gathering primary keys for table types
+23/02/2021 21:46:30	Gathering indexes for table types
+23/02/2021 21:46:30	Gathering check constraints for table types
+23/02/2021 21:46:30	Gathering default constraints for table types
+23/02/2021 21:46:30	Gathering partition functions
+23/02/2021 21:46:30	Gathering partition schemes
+23/02/2021 21:47:02	Gathering functions
+23/02/2021 21:47:02	Gathering encrypted functions
+23/02/2021 21:47:02	Gathering aggregates
+23/02/2021 21:47:02	Gathering procedures
+23/02/2021 21:47:02	Gathering encrypted procedures
+23/02/2021 21:47:02	Gathering tables
+23/02/2021 21:47:02	Gathering primary keys
+23/02/2021 21:47:02	Gathering unique constraints
+23/02/2021 21:47:02	Gathering foreign keys
+23/02/2021 21:47:02	Gathering default constraints
+23/02/2021 21:47:02	Gathering check constraints
+23/02/2021 21:47:02	Gathering views
+23/02/2021 21:47:02	Gathering encrypted views
+23/02/2021 21:47:02	Gathering indexes
+23/02/2021 21:47:02	Gathering statistics
+23/02/2021 21:47:02	Gathering full-text index stoplists
+23/02/2021 21:47:02	Gathering search property lists
+23/02/2021 21:47:02	Gathering search properties
+23/02/2021 21:47:02	Gathering full-text indexes
+23/02/2021 21:47:02	Gathering column store indexes
+23/02/2021 21:47:02	Gathering spatial indexes
+23/02/2021 21:47:02	Gathering XML indexes
+23/02/2021 21:47:02	Gathering Selective XML indexes
+23/02/2021 21:47:02	Gathering encrypted triggers
+23/02/2021 21:47:02	Gathering triggers
+23/02/2021 21:47:02	Gathering encrypted and clr ddl triggers
+23/02/2021 21:47:02	Gathering ddl triggers
+23/02/2021 21:47:02	Gathering synonyms
+23/02/2021 21:47:02	Gathering defaults
+23/02/2021 21:47:02	Gathering data constraint uddt bindings
+23/02/2021 21:47:02	Gathering rules
+23/02/2021 21:47:02	Gathering data constraint uddt bindings
+23/02/2021 21:47:02	Gathering message types
+23/02/2021 21:47:02	Gathering queues
+23/02/2021 21:47:02	Gathering contracts
+23/02/2021 21:47:02	Gathering services
+23/02/2021 21:47:02	Gathering event notifications
+23/02/2021 21:47:02	Gathering remote service bindings
+23/02/2021 21:47:02	Gathering broker priorities
+23/02/2021 21:47:02	Gathering signatures
+23/02/2021 21:47:02	Gathering data compression options
+23/02/2021 21:47:02	Gathering sequence types
+23/02/2021 21:47:02	Gathering security policies
+23/02/2021 21:47:02	Gather column encryption keys
+23/02/2021 21:47:02	Gathering column master keys
+23/02/2021 21:47:02	Gathering external data sources
+23/02/2021 21:47:02	Gathering external file formats
+23/02/2021 21:47:02	Gathering external tables
+23/02/2021 21:47:02	Gathering extended properties
+23/02/2021 21:47:02	Gathering credentials
+23/02/2021 21:47:02	Gathering logins
+23/02/2021 21:47:02	Gathering server audits
+23/02/2021 21:47:03	Scanning project for duplicate elements
+23/02/2021 21:47:05	Finished duplicate element processing
+23/02/2021 21:47:06	Finished importing database.
+23/02/2021 21:47:06	A summary of the import was saved to the following location: C:\nerdstore\NerdStore\nerdstore\database\nerdstore.database\Import Schema Logs\nerdstore.database_20210224124617.log
+23/02/2021 21:47:06	Click Finish to continue...
