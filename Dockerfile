@@ -1,18 +1,19 @@
-ROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build-env
-WORKDIR /app
+# https://hub.docker.com/_/microsoft-dotnet
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /source
 
-# Copiar csproj e restaurar dependencias
-COPY *.csproj ./
+# copy csproj and restore as distinct layers
+COPY *.sln .
+COPY aspnetapp/*.csproj ./aspnetapp/
 RUN dotnet restore
 
-RUN pwsh -Command Write-Host "APIContagem: Gerando uma nova imagem Docker com Alpine e testando o PowerShell Core"
+# copy everything else and build app
+COPY aspnetapp/. ./aspnetapp/
+WORKDIR /source/aspnetapp
+RUN dotnet publish -c release -o /app --no-restore
 
-# Build da aplicacao
-COPY . ./
-RUN dotnet publish -c Release -o out
-
-# Build da imagem
-FROM mcr.microsoft.com/dotnet/core/aspnet:5.0-alpine
+# final stage/image
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
-COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "APIContagem.dll"]
+COPY --from=build /app ./
+ENTRYPOINT ["dotnet", "aspnetapp.dll"]
