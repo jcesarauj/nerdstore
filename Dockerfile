@@ -1,18 +1,19 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-alpine AS build-env
+FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
+EXPOSE 80
 
-# Copiar csproj e restaurar dependencias
-COPY *.csproj ./
-RUN dotnet restore
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
+WORKDIR /src
+COPY ["src/NerdStore.Sales.Api/NerdStore.Sales.Api.csproj", "src/NerdStore.Sales.Api/"]
+RUN dotnet restore "src\NerdStore.Sales.Api\NerdStore.Sales.Api.csproj"
+COPY . .
+WORKDIR "/src/src/NerdStore.Sales.Api"
+RUN dotnet build "NerdStore.Sales.Api.csproj" -c Release -o /app/build
 
-RUN pwsh -Command Write-Host "NerdStore.Sales.Api.dll: Gerando uma nova imagem Docker com Alpine e testando o PowerShell Core"
+FROM build AS publish
+RUN dotnet publish "NerdStore.Sales.Api.csproj" -c Release -o /app/publish
 
-# Build da aplicacao
-COPY . ./
-RUN dotnet publish -c Release -o out
-
-# Build da imagem
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine
+FROM base AS final
 WORKDIR /app
-COPY --from=build-env /app/out .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "NerdStore.Sales.Api.dll"]
