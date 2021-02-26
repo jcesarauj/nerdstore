@@ -24,6 +24,6 @@ jobs:
       
     - name: Build the Docker image
       run: |
-        docker build . -t docker-whal ./Dockerfile.txt --tag ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer:latest
+        docker build . --file Dockerfile --tag ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer:latest
         docker tag ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer:latest ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer:$(date +%s)
         docker push ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer
