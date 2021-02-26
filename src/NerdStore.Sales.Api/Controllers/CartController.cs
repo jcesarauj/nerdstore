@@ -36,6 +36,7 @@ namespace NerdStore.Sales.Api.Controllers
 		{
 			try
 			{
+				//teste
 				ProductViewModel product = await _productService.GetById(addCartItemCommand.ProductId);
 
 				if (product == null) return Error("Produto não encontrado", "P0001", System.Net.HttpStatusCode.NotFound);
