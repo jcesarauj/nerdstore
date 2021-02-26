@@ -142,18 +142,6 @@ namespace NerdStore.Sales.Api.Controllers
 			}
 		}
 
-		[HttpGet]
-		[Route("healthcheck")]
-		public async Task<IActionResult> Get()
-		{
-			try
-			{
-				return Response("Olá funcionando");
-			}
-			catch (Exception ex)
-			{
-				return Error(ex);
-			}
-		}
+		
 	}
 }
