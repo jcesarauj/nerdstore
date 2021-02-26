@@ -4,11 +4,11 @@ WORKDIR /source
 
 # copy csproj and restore as distinct layers
 COPY *.sln .
-COPY aspnetapp/*.csproj ./aspnetapp/
+COPY *.csproj ./
 RUN dotnet restore
 
 # copy everything else and build app
-COPY aspnetapp/. ./aspnetapp/
+COPY . ./
 WORKDIR /source/aspnetapp
 RUN dotnet publish -c release -o /app --no-restore
 
