@@ -5,7 +5,7 @@ WORKDIR /app
 COPY *.csproj ./
 RUN dotnet restore
 
-RUN pwsh -Command Write-Host "APIContagem: Gerando uma nova imagem Docker com Alpine e testando o PowerShell Core"
+RUN pwsh -Command Write-Host "NerdStore.Sales.Api.dll: Gerando uma nova imagem Docker com Alpine e testando o PowerShell Core"
 
 # Build da aplicacao
 COPY . ./
@@ -15,4 +15,4 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "APIContagem.dll"]
+ENTRYPOINT ["dotnet", "NerdStore.Sales.Api.dll"]
