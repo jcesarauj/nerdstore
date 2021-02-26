@@ -9588,11 +9588,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj",
+      "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj",
       "projectName": "NerdStore.Sales.Api",
-      "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj",
+      "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj",
       "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-      "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\obj\\",
+      "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9612,23 +9612,23 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
             }
           }
         }

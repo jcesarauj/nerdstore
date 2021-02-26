@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj": {}
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj": {}
   },
   "projects": {
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
         "projectName": "NerdStore.Catalog.Application",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj",
         "projectName": "NerdStore.Catalog.Domain",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -95,8 +95,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               }
             }
           }
@@ -135,14 +135,14 @@
         }
       }
     },
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
         "projectName": "NerdStore.Catalog.Data",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -162,8 +162,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
               }
             }
           }
@@ -216,14 +216,14 @@
         }
       }
     },
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "projectName": "NerdStore.Core",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -299,14 +299,14 @@
         }
       }
     },
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj",
         "projectName": "NerdStore.Sales.Api",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Api\\NerdStore.Sales.Api.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Api\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -326,23 +326,23 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Aplication\\NerdStore.Catalog.Application.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Repository\\NerdStore.Catalog.Data.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
               }
             }
           }
@@ -378,14 +378,14 @@
         }
       }
     },
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj",
         "projectName": "NerdStore.Sales.Data",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Data\\NerdStore.Sales.Data.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Data\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -405,11 +405,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
               }
             }
           }
@@ -442,14 +442,14 @@
         }
       }
     },
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
         "projectName": "NerdStore.Sales.Domain",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -469,11 +469,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
               },
-              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               }
             }
           }

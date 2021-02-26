@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Data\\NerdStore.Payments.Data.csproj": {}
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Data\\NerdStore.Payments.Data.csproj": {}
   },
   "projects": {
-    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Data\\NerdStore.Payments.Data.csproj": {
+    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Data\\NerdStore.Payments.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Data\\NerdStore.Payments.Data.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Data\\NerdStore.Payments.Data.csproj",
         "projectName": "NerdStore.Payments.Data",
-        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Data\\NerdStore.Payments.Data.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Data\\NerdStore.Payments.Data.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Data\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

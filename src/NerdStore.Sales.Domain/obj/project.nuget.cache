@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UBKKx01OEF05Av72ZIKUHCUx+azAmHFoS4PLJYpzuDr7LgqAxoR8tz2PMXDoWZ8un7O5AZ2QgH2LFmQSGB3Ozg==",
+  "dgSpecHash": "Yf79CH4AnuvVziUW5IpwbZqjpEoWRFgdfk7yFtcPju2HZ00Gy1ZI/pck0A6S1x/UxG/XMGq3Aon8RypTsWCwXw==",
   "success": true,
-  "projectFilePath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
+  "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",

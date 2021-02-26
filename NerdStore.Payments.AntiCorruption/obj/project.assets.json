@@ -7932,11 +7932,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\NerdStore.Payments.AntiCorruption\\NerdStore.Payments.AntiCorruption.csproj",
+      "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\NerdStore.Payments.AntiCorruption\\NerdStore.Payments.AntiCorruption.csproj",
       "projectName": "NerdStore.Payments.AntiCorruption",
-      "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\NerdStore.Payments.AntiCorruption\\NerdStore.Payments.AntiCorruption.csproj",
+      "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\NerdStore.Payments.AntiCorruption\\NerdStore.Payments.AntiCorruption.csproj",
       "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-      "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\NerdStore.Payments.AntiCorruption\\obj\\",
+      "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\NerdStore.Payments.AntiCorruption\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7956,14 +7956,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Catalog.Domain\\NerdStore.Catalog.Domain.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj"
             },
-            "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
-              "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
+            "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj": {
+              "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Sales.Domain\\NerdStore.Sales.Domain.csproj"
             }
           }
         }
