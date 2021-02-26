@@ -20,6 +20,6 @@ jobs:
 
     - name: Build e Push no Azure Container Registry
       run: |
-        docker build . --file Dockerfile --tag ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstoreapi:latest
-        docker tag ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstoreapi:latest ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/apicontagem:$(date +%s)
-        docker push ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstoreapi
+        docker build . --file Dockerfile --tag ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer:latest
+        docker tag ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer:latest ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer:$(date +%s)
+        docker push ${{ secrets.DOCKER_CONTAINER_REGISTRY }}/nerdstorecontainer
