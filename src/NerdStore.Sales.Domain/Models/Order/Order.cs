@@ -14,7 +14,7 @@ namespace NerdStore.Sales.Domain.Models.Order
 		private List<Event> _notifications;
 		public IReadOnlyCollection<Event> Notifications => _notifications?.AsReadOnly();
 
-		protected Order()
+		public Order()
 		{
 			_orderItems = new List<OrderItem>();
 		}
@@ -66,9 +66,8 @@ namespace NerdStore.Sales.Domain.Models.Order
 			return null;
 		}
 
-		public void UpdateStatus(OrderStatusEnum orderStatus)
-		{
-			OrderStatus = orderStatus;
+		public void Start() {
+			OrderStatus = Enums.OrderStatusEnum.Started;			
 		}
 
 		public void RemoveItem(OrderItem orderItem)

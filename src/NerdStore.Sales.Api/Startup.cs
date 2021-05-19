@@ -1,3 +1,4 @@
+using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -23,6 +24,7 @@ using NerdStore.Sales.Domain.Events;
 using NerdStore.Sales.Domain.Events.Order;
 using NerdStore.Sales.Domain.Handlers;
 using NerdStore.Sales.Domain.Queries;
+using NerdStore.Sales.Domain.Validation.Command.Order;
 
 namespace NerdStore.Sales.Api
 {
@@ -61,6 +63,9 @@ namespace NerdStore.Sales.Api
 			services.AddScoped<INotificationHandler<DraftOrderStartedEvent>, OrderEventHandler>();
 			services.AddScoped<INotificationHandler<OrderItemAddedEvent>, OrderEventHandler>();
 			services.AddScoped<INotificationHandler<OrderItemUpdatedEvent>, OrderEventHandler>();
+
+			//Valida o comando no momento do disparo
+			services.AddTransient<IValidator<StartOrderCommand>, StartOrderValidation>();
 
 			//Queries
 			services.AddScoped<IOrderQueries, OrderQueries>();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj": {}
+    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj": {}
   },
   "projects": {
-    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "projectName": "NerdStore.Core",
-        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj": {
+    "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj",
+        "projectUniqueName": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj",
         "projectName": "NerdStore.Payments.Business",
-        "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj",
+        "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Business\\NerdStore.Payments.Business.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Payments.Business\\obj\\",
+        "outputPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Payments.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -114,8 +114,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
-                "projectPath": "C:\\nerdstore\\NerdStore\\NerdStore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
+              "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj": {
+                "projectPath": "C:\\nerdstore\\NerdStore\\nerdstore\\src\\NerdStore.Core\\NerdStore.Core.csproj"
               }
             }
           }

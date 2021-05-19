@@ -162,19 +162,15 @@ namespace NerdStore.Sales.Domain.Handlers
 
 		public async Task<bool> Handle(StartOrderCommand startOrderCommand, CancellationToken cancellationToken)
 		{
-			if (!ValidateCommand(startOrderCommand)) return false;
+			if (!ValidateCommand(startOrderCommand)) return false;//Validado na startup
 
-			var order = await _orderRepository.GetOrderDraftByClientId(startOrderCommand.ClientId);
-			order.UpdateStatus(Enums.OrderStatusEnum.Started);
+			var result = await new StartOrder(startOrderCommand, _orderRepository)
+					   .GetOrderDraftByClientId()
+					   .SetStatusStartInOrder()
+					   .AddEvent()
+					   .SaveOrder();
 
-			var itensList = new List<Item>();
-			order.OrderItems.ForEach(i => itensList.Add(new Item { Id = i.ProductId, Quantity = i.Quantity }));
-			var listProductOrder = new ListProductsOrder { OrderId = order.Id, Itens = itensList };
-
-			order.AddEvent(new StartOderEvent(order.Id, order.ClientId, order.TotalValue, listProductOrder, startOrderCommand.CardName, startOrderCommand.CardNumber, startOrderCommand.Expiration, startOrderCommand.Cvv));
-
-			_orderRepository.Update(order);
-			return await _orderRepository.UnitOfWork.Commit();
+			return result;
 		}
 
 		public async Task<bool> Handle(FinalizeOrderCommand finalizeOrderCommand, CancellationToken cancellationToken)

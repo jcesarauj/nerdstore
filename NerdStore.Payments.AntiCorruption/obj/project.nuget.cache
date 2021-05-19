@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vnIzmyIY2JLqjUqZRxJc5/YQHEdmnNw7pAxVic2job9clHDrMx1zsGvafpD6GL5Pn10QC6s7N/X869mIZ+3p+A==",
+  "dgSpecHash": "vi0kEg0vDnVFThsC+j7xbMdrjBalg8bRB2MkvWNgdjO1S/6s5Flyz6I6Gu1D0M6Q5D3rHMYyqrhlPPjwRCIs2A==",
   "success": true,
-  "projectFilePath": "C:\\nerdstore\\NerdStore\\NerdStore\\NerdStore.Payments.AntiCorruption\\NerdStore.Payments.AntiCorruption.csproj",
+  "projectFilePath": "C:\\nerdstore\\NerdStore\\nerdstore\\NerdStore.Payments.AntiCorruption\\NerdStore.Payments.AntiCorruption.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\fluentvalidation\\9.4.0\\fluentvalidation.9.4.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
